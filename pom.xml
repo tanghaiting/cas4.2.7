@@ -1,0 +1,35 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>cas4.2.7</groupId>
+  <artifactId>cas4.2.7</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  
+	<properties>
+		<!-- 依赖包版本 -->
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<alibaba.druid.version>1.0.18</alibaba.druid.version>
+		<mysql-connector-java.version>5.1.38</mysql-connector-java.version>
+	</properties>
+  <dependencies>
+  		<!-- 数据库以及事物依赖 开始 -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>${mysql-connector-java.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>druid</artifactId>
+			<version>${alibaba.druid.version}</version>
+		</dependency>
+		<!-- cas-server-support-jdbc.jar 依赖 -->
+		<dependency>
+		    <groupId>org.jasig.cas</groupId>
+		    <artifactId>cas-server-support-jdbc</artifactId>
+		    <version>4.2.7</version>
+		</dependency>
+		<!-- 数据库以及事物依赖 结束 -->
+		
+  </dependencies>
+</project>
